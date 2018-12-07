@@ -103,9 +103,7 @@ m.sendMessage(args)
 
        b!bc  |  لأرسال برود كاست للأونلاين
 
-       b!invite | لدعوة البوت الي سيرفرك
-
-       b!support | سيرفر السبورت** `)
+       b!invite | لدعوة البوت الي سيرفرك ** `)
    message.author.sendEmbed(embed)
    
    }
@@ -116,22 +114,12 @@ m.sendMessage(args)
     if (message.content === "b!invite") {
      const embed = new Discord.RichEmbed()
          .setColor("RANDOM")
-         .addField('Broadcast', `https://discordapp.com/api/oauth2/authorize?client_id=520333496040816653&permissions=8&scope=bot`)
+         .addField('Broadcast', `https://discordapp.com/api/oauth2/authorize?client_id=520651373117964298&permissions=8&scope=bot`)
      message.author.send({embed});
    
     }
    });
 
-
-   client.on("message", message => {
-    if (message.content === "b!support") {
-     const embed = new Discord.RichEmbed()
-         .setColor("RANDOM")
-         .addField('❤سيرفر الدعم الفني', `  https://discord.gg/9kKFURV  `)
-     message.author.send({embed});
-   
-    }
-   });
 
 
 
